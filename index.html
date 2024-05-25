@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1>Welcome to Computer Trivia!</h1>
+            <button type="button" class="start-btn">START</button>
+        </header>
+        <section class="quiz wrapper invisible">
+            <div class="computer-container">
+                <form class="question" id="quizForm">
+                    <h2 class="trivia-question"></h2>
+                    <fieldset class="answer-container">
+                        <legend>Select an Answer</legend>
+                        <input type="radio" name="option" id="option1" value="option1" required>
+                        <label class="option" name="option" for="option1">Option 1</label>
+
+                        <input type="radio" name="option" id="option2" value="option2" required>
+                        <label class="option" name="option" for="option2">Option 2</label>
+
+                        <input type="radio" name="option" id="option3" value="option3" required>
+                        <label class="option" name="option" for="option3">Option 3</label>
+
+                        <input type="radio" name="option" id="option4" value="option4" required>
+                        <label class="option" name="option" for="option4">Option 4</label>
+
+                        <div class="container">
+                            <div class="btn-container">
+                                <button type="submit" class="submit">Submit</button>
+                                <button class="nextButton">Next</button>
+                                <button class="finishButton">Finish Quiz</button>
+                            </div>
+                            <div class="current-score">Current Score: <span id="currentScore">0</span></div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section class="end-game wrapper invisible">
+            <div class="end-content">
+                <h3 class="final-score"></h3>
+                <p>Congratulations you finished the quiz!</p>
+                <button class="restart">Restart</button>
+            </div>
+        </section>
+        <script src="app.js" async defer></script>
+    </body>
+</html>
